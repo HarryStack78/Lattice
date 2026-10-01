@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+:root[data-theme="light"] {
+  --canvas: 244 244 242;
+  --surface: 255 255 255;
+  --surface-raised: 250 250 249;
+  --ink-primary: 11 11 12;
+  --ink-secondary: 82 82 91;
+  --ink-tertiary: 100 100 110;
+  --fg: 11 11 12;
+  --glow: 30 41 59;
+  --hero-glow: 110 120 255 / 0.14;
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --canvas: 11 11 12;
+  --surface: 18 18 20;
+  --surface-raised: 23 23 26;
+  --ink-primary: 245 245 247;
+  --ink-secondary: 161 161 166;
+  --ink-tertiary: 142 142 147;
+  --fg: 255 255 255;
+  --glow: 226 232 240;
+  --hero-glow: 245 245 247 / 0.08;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(var(--canvas));
+  color: rgb(var(--ink-primary));
+  overscroll-behavior: none;
+}
+
+/* ==========================================================================
+   MALAYALAM TYPOGRAPHY SYSTEM — MANJARI
+   Primary font for all Malayalam content with fallback to English sans
+   ========================================================================== */
+html[lang="ml"],
+html[data-locale="ml"],
+body[data-locale="ml"],
+.locale-ml {
+  --font-display: var(--font-ml), "Manjari", var(--font-sans), sans-serif;
+  --font-sans: var(--font-ml), "Manjari", sans-serif;
+  font-family: var(--font-ml), "Manjari", var(--font-sans), sans-serif;
+}
+
+html[lang="ml"] h1,
+html[lang="ml"] h2,
+html[lang="ml"] h3,
+html[lang="ml"] h4,
+html[data-locale="ml"] h1,
+html[data-locale="ml"] h2,
+html[data-locale="ml"] h3,
+html[data-locale="ml"] h4,
+.locale-ml h1,
+.locale-ml h2,
+.locale-ml h3,
+.locale-ml h4 {
+  font-family: var(--font-ml), "Manjari", sans-serif !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.22 !important;
+}
+
+html[lang="ml"] p,
+html[lang="ml"] span,
+html[lang="ml"] a,
+html[lang="ml"] button,
+html[lang="ml"] label,
+html[lang="ml"] input,
+html[lang="ml"] textarea,
+html[data-locale="ml"] p,
+html[data-locale="ml"] span,
+html[data-locale="ml"] a,
+html[data-locale="ml"] button,
+html[data-locale="ml"] label,
+html[data-locale="ml"] input,
+html[data-locale="ml"] textarea,
+.locale-ml p,
+.locale-ml span,
+.locale-ml a,
+.locale-ml button,
+.locale-ml label,
+.locale-ml input,
+.locale-ml textarea {
+  font-family: var(--font-ml), "Manjari", var(--font-sans), sans-serif;
+}
+
+html[lang="ml"] .hero-title,
+html[data-locale="ml"] .hero-title,
+.locale-ml .hero-title {
+  font-family: var(--font-ml), "Manjari", sans-serif !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.01em !important;
+}
+
+html[lang="ml"] .section-title,
+html[data-locale="ml"] .section-title,
+.locale-ml .section-title {
+  font-family: var(--font-ml), "Manjari", sans-serif !important;
+  line-height: 1.22 !important;
+}
+
+html[lang="ml"] button,
+html[lang="ml"] .btn,
+html[data-locale="ml"] button,
+html[data-locale="ml"] .btn,
+.locale-ml button {
+  letter-spacing: normal !important;
+}
+
+/* Ensure tall Malayalam ascenders/descenders are never clipped in masked reveals */
+html[lang="ml"] .mask-line-tall,
+html[data-locale="ml"] .mask-line-tall,
+.locale-ml .mask-line-tall {
+  padding-bottom: 0.28em !important;
+  margin-bottom: -0.28em !important;
+  padding-top: 0.12em !important;
+  margin-top: -0.12em !important;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* Native cursor remains fully visible and operable across all platforms and devices */
+body[data-cursor-ready="true"] {
+  cursor: default;
+}
+
+body[data-cursor-ready="true"] a,
+body[data-cursor-ready="true"] button,
+body[data-cursor-ready="true"] [role="button"],
+body[data-cursor-ready="true"] summary,
+body[data-cursor-ready="true"] [data-cursor="link"] {
+  cursor: pointer;
+}
+
+body[data-cursor-ready="true"] input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+body[data-cursor-ready="true"] textarea {
+  cursor: text;
+}
+
+::selection {
+  background-color: rgb(var(--ink-primary));
+  color: rgb(var(--canvas));
+}
+
+:focus-visible {
+  outline: 1px solid rgb(var(--ink-primary));
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: rgb(var(--ink-primary));
+  color: rgb(var(--canvas));
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  filter: invert(1);
+}
+
+:root[data-theme="dark"] .noise-overlay {
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  filter: none;
+}
+
+/* Masked reveals: the outer element clips, the inner [data-mask] element slides up. */
+.mask-line {
+  display: block;
+  overflow: hidden;
+}
+
+.mask-line-tall {
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+}
+
+/* Hidden until GSAP takes over, so there is no flash before hydration. */
+[data-mask],
+[data-fade] {
+  visibility: hidden;
+}
+
+.grain-fade {
+  background: radial-gradient(
+    circle at var(--cursor-x) var(--cursor-y),
+    rgb(var(--hero-glow)),
+    transparent 45%
+  );
+}
+
+/*
+ * Theme switching uses the View Transitions API: the browser snapshots the old page,
+ * flips the theme atomically, then reveals the new page through an expanding circle
+ * (animated from ThemeProvider). No element is ever half-way between two themes.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+/* The pointer stays live and on top during a theme switch instead of being snapshotted. */
+::view-transition-group(lattice-cursor) {
+  animation: none;
+  z-index: 3;
+}
+
+::view-transition-old(lattice-cursor) {
+  display: none;
+}
+
+::view-transition-new(lattice-cursor) {
+  animation: none;
+}
+
+.founder-portrait {
+  background:
+    radial-gradient(circle at 25% 18%, rgb(140 160 255 / 0.55), transparent 55%),
+    radial-gradient(circle at 82% 86%, rgb(255 170 210 / 0.42), transparent 55%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}

@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Lattice — Creative Design Studio",
+    "description": "Lattice is a creative design studio for 3D work, web design and development, UI/UX and advertising.",
+    "siteUrl": "https://lattice.studio",
+    "siteName": "Lattice"
+  },
+  "nav": {
+    "links": [
+      { "label": "Work", "href": "#work" },
+      { "label": "About", "href": "#about" },
+      { "label": "Founder", "href": "#founder" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": "Start a conversation"
+  },
+  "hero": {
+    "eyebrow": "Creative Design Studio",
+    "headline": ["We craft bold", "3D, web & brand", "experiences."],
+    "intro": "Lattice is a creative design studio for 3D work, web design and development, UI/UX and advertising, joining strategy, craft and technology into one seamless system.",
+    "scrollLabel": "(01) — Scroll to explore",
+    "tagline": "3D · Web · UI/UX · Advertising"
+  },
+  "about": {
+    "label": "About Lattice",
+    "manifesto": "Lattice is a creative design studio that lives where imagination meets engineering. We shape 3D worlds, websites, interfaces and campaigns with the same obsession: every surface, every transition and every detail is considered, because details are all anyone remembers.",
+    "marquee": "Lattice blends artistry with cutting-edge technology to craft 3D, web and brand experiences that leave a mark",
+    "services": [
+      {
+        "title": "3D Design & Motion",
+        "body": "Product visualisation, animated launch films and real-time WebGL worlds that make the intangible feel tangible."
+      },
+      {
+        "title": "Web Design & Development",
+        "body": "Art-directed, fast and accessible websites, from campaign microsites to full platforms built on modern stacks."
+      },
+      {
+        "title": "UI/UX Design",
+        "body": "Research-led product design: flows, interfaces and design systems shaped around how people actually behave."
+      },
+      {
+        "title": "Advertising & Campaigns",
+        "body": "Art direction and campaign creative for digital, social and out-of-home, with a visual voice that is unmistakably yours."
+      }
+    ]
+  },
+  "work": {
+    "label": "Selected Work",
+    "readMore": "Read more",
+    "projects": [
+      {
+        "id": "auralis",
+        "title": "Auralis Headphones",
+        "client": "Auralis Audio",
+        "domain": "auralis.audio",
+        "year": "2026",
+        "tags": ["3D Visualisation", "Web Development", "Interactive Experience"],
+        "summary": "A real-time 3D launch site for a premium headphone brand, where visitors orbit, dissect and customise the product in the browser.",
+        "challenge": "Auralis was launching flagship headphones whose story is all about fine detail: machined aluminium, tuned acoustic chambers, hand-stitched leather. Yet its site reduced the product to a carousel of flat studio photos. The team needed a launch experience that let people feel the craft before they ever held the product.",
+        "approach": "We built the headphones as a photoreal 3D model with physically based materials, then shipped it to the web as an optimised real-time scene. Scroll drives a guided exploded view of the internals, while a configurator lets visitors swap finishes live. The same assets fed a launch film and campaign stills, so every touchpoint shared one visual language.",
+        "result": "The launch site became the anchor of the campaign, and the 3D assets were reused across the launch film, retail displays and social content: one production, many touchpoints.",
+        "colors": ["#2b2f6b", "#7c8cff", "#0b0b0c"]
+      },
+      {
+        "id": "nordwell",
+        "title": "Nordwell Care",
+        "client": "Nordwell Health",
+        "domain": "nordwell.care",
+        "year": "2026",
+        "tags": ["UI/UX Design", "Design System", "Mobile Product"],
+        "summary": "A calm, accessible companion app and design system for a digital-health provider, rebuilt around the moments patients actually care about.",
+        "challenge": "Nordwell's patients, many of them older and managing long-term conditions, were dropping out of the app during appointment booking and medication tracking. Research showed the interface mirrored the clinic's internal workflows rather than the way people think about their own health.",
+        "approach": "We ran interviews and prototype testing, then restructured the app around three daily moments: today's medication, the next appointment and a direct line to a nurse. A new design system with generous type, high-contrast colour tokens and considered motion made every screen consistent and gave Nordwell's in-house team a foundation to keep building on.",
+        "result": "Usability sessions showed patients completing booking and medication check-ins with far less hesitation, and Nordwell's team now extends the design system on its own for new features.",
+        "colors": ["#0f3d3e", "#4fd1c5", "#0b0b0c"]
+      },
+      {
+        "id": "sunlit",
+        "title": "Sunlit Sparkling",
+        "client": "Sunlit Beverages",
+        "domain": "sunlitsparkling.co",
+        "year": "2025",
+        "tags": ["Advertising", "Art Direction", "Motion Graphics"],
+        "summary": "A summer campaign for a sparkling-water brand: surreal 3D still-lifes, a motion-led social series and out-of-home placements.",
+        "challenge": "Sunlit was entering a crowded category where every competitor leaned on the same beach-and-lemon imagery. It needed a campaign that felt unmistakably its own, worked from a phone screen to a billboard, and could be produced on a mid-size budget.",
+        "approach": "We art-directed a series of surreal 3D still-lifes, with bottles suspended in impossible sunlit landscapes, rendered once and adapted into billboard, transit, social and short-form video formats. A bold colour system and a single recurring visual gesture kept the campaign recognisable at every size.",
+        "result": "The campaign ran across out-of-home, digital and social in one unified look, and Sunlit carried the visual system into its packaging for the following season.",
+        "colors": ["#5a2a0f", "#ff9f4a", "#0b0b0c"]
+      }
+    ]
+  },
+  "founder": {
+    "label": "Founder",
+    "name": "Sreehari AM",
+    "initials": "SA",
+    "role": "Founder & Creative Director",
+    "photo": "/uploads/founder.jpg",
+    "bio": [
+      "Lattice began with a simple conviction: the best digital work comes from people who move fluently between disciplines. The studio was founded to bring 3D, web, UI/UX and advertising under one roof, so a single team can carry an idea from the first sketch to the final shipped pixel.",
+      "As creative director, Sreehari sets the visual direction for every project and stays close to the craft, from the shape of a 3D form to the timing of a single interaction."
+    ],
+    "principleLabel": "Guiding principle",
+    "principle": "Every surface, every transition and every detail is considered, because details are all anyone remembers.",
+    "focus": ["Creative Direction", "3D & Motion", "Web & UI/UX"],
+    "cta": "Work with us"
+  },
+  "contact": {
+    "label": "One last thing",
+    "eyebrow": "Tell us what’s next",
+    "heading": "Have a project in mind? Let’s make something impossible to ignore.",
+    "email": "hello@lattice.studio"
+  },
+  "footer": {
+    "copyright": "Lattice. All rights reserved.",
+    "backToTop": "Back to top",
+    "socials": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "X / Twitter", "href": "#" },
+      { "label": "LinkedIn", "href": "#" }
+    ]
+  }
+}
