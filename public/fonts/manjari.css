@@ -1,0 +1,22 @@
+﻿@font-face {
+  font-family: 'Manjari';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manjari/v14/k3kSo8UPMOBO2w1UdbroKw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manjari';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manjari/v14/k3kQo8UPMOBO2w1UTd4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manjari';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manjari/v14/k3kVo8UPMOBO2w1UdWLNC0E.ttf) format('truetype');
+}
+

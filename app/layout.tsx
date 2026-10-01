@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Syne, Inter, JetBrains_Mono, Manjari } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
@@ -9,33 +8,7 @@ import NoiseOverlay from "@/components/NoiseOverlay";
 import { LocaleProvider } from "@/lib/i18n";
 import { getSiteContent } from "@/lib/site";
 
-const display = Syne({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  variable: "--font-display",
-  display: "swap",
-});
 
-const sans = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
-  display: "swap",
-});
-
-const manjari = Manjari({
-  subsets: ["malayalam", "latin"],
-  weight: ["400", "700"],
-  variable: "--font-ml",
-  display: "swap",
-});
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = cookies();
@@ -89,7 +62,7 @@ export default function RootLayout({
       data-theme="light"
       data-locale={cookieLocale}
       suppressHydrationWarning
-      className={`${display.variable} ${sans.variable} ${mono.variable} ${manjari.variable}`}
+      className=""
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />

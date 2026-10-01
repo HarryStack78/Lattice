@@ -1,3 +1,15 @@
+@import url("/fonts/syne.css");
+@import url("/fonts/inter.css");
+@import url("/fonts/jetbrainsmono.css");
+@import url("/fonts/manjari.css");
+
+:root {
+  --font-display: "Syne";
+  --font-sans: "Inter";
+  --font-mono: "JetBrains Mono";
+  --font-ml: "Manjari";
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -230,11 +242,9 @@ button {
 }
 
 .grain-fade {
-  background: radial-gradient(
-    circle at var(--cursor-x) var(--cursor-y),
-    rgb(var(--hero-glow)),
-    transparent 45%
-  );
+  background: radial-gradient(circle at var(--cursor-x) var(--cursor-y),
+      rgb(var(--hero-glow)),
+      transparent 45%);
 }
 
 /*
@@ -277,6 +287,7 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
